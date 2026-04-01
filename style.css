@@ -1031,23 +1031,40 @@ body {
 
     .timeline::before { display: none; }
     .timeline-item {
-        grid-template-columns: 3rem 0 1fr;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: .75rem;
         padding-block: 1rem;
     }
     .tl-connector { display: none; }
-    .tl-time { font-size: .9rem; }
+    .tl-time {
+        font-size: .85rem;
+        flex-shrink: 0;
+        width: 2.8rem;
+        text-align: right;
+        padding-top: .25rem;
+    }
     .tl-duration { display: none; }
 
-    /* Stack icon above text instead of side by side */
+    /* Text fills all remaining space */
     .tl-body {
+        flex: 1;
+        min-width: 0;
         flex-direction: column;
-        gap: .6rem;
+        gap: .5rem;
+    }
+    .tl-text {
+        min-width: 0;
+        width: 100%;
     }
     .tl-icon-wrap {
         width: 34px; height: 34px;
+        flex-shrink: 0;
     }
     .tl-text h4 { font-size: .95rem; }
     .tl-text p  { font-size: .82rem; }
+    .cta-section { max-width: 90vw; }
 }
 
 @media (max-width: 480px) {
