@@ -18,7 +18,7 @@ This repository contains a static landing page designed for a green hydrogen eve
 
 Instead of using a generic event template, the site leans into a more editorial presentation with layered textures, atmospheric color treatment, wave dividers, motion details, and a 3D visual that reinforces the energy theme.
 
-This codebase was developed from a fork of work by [Morta-dev-git](https://github.com/Morta-dev-git), which gave me a clean space to work freely on the implementation before sending the updates back upstream through a pull request that was merged.
+This codebase is part of a collaborative work forked from [Morta-dev-git](https://github.com/Morta-dev-git) to give me more free space and full access during development, before sending the updates back upstream through a pull request that was merged.
 
 ## Highlights
 
@@ -49,7 +49,7 @@ This codebase was developed from a fork of work by [Morta-dev-git](https://githu
 |-- 3D_WindFarm.js      # Active Three.js scene used on the page
 |-- 3D_Molecule.js      # Alternate 3D concept kept in the repo
 |-- logo.svg            # Source vector logo
-\-- img/                # Local image assets used by the page
+ \-- img/                # Local image assets used by the page
 ```
 
 ## Running Locally
@@ -75,7 +75,6 @@ Opening `index.html` directly may work, but serving the folder locally is the sa
 
 ## Notes
 
-This repository was used as the working fork during development.
+This repository was used as the working fork so development could move more freely with full access.
 
 Some content inside `index.html` still reads like demo or placeholder event data, including parts of the committee list, registration URL, and contact information. If the site is reused for a real event, those values should be replaced before deployment.
-
